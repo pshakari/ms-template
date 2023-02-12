@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: ms-template
+
+server:
+  port: 8080
+
+

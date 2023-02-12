@@ -1,0 +1,8 @@
+resources:
+  - ../base
+patchesStrategicMerge:
+  - deployment.yaml
+images:
+  - name: registry.shakari.no/ms-template
+    newTag: "latest"
+namespace: nm-dev

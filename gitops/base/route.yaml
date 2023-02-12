@@ -1,0 +1,18 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: bff
+  labels:
+    ingress-tenant: default
+spec:
+  host: ms-template.apps.openshift.com
+  path: /
+  to:
+    kind: Service
+    name: bff
+    weight: 100
+  port:
+    targetPort: 8080
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
