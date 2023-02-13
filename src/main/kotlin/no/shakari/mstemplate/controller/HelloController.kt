@@ -6,5 +6,5 @@ import org.springframework.web.bind.annotation.GetMapping
 @RestController
 class HelloController {
     @GetMapping("/")
-    fun greeting() = ResponseEntity.ok("Hello World!")
+    fun greeting() = ResponseEntity.ok("Hello World 2!")
 }
